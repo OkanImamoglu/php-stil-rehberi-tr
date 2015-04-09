@@ -22,7 +22,7 @@ Route'lar çoğul olacak. Örn. /users/
 
 Nested Route'lar ilişki tipine göre çoğul veya tekil isimlendirilecek. Örn. hasMany: users/1/customer*s* , hasOne: customers/2/user
 
-Çok kelimeli Route'lar alttire "_" ile ayrılacak. Örn. /hello_world/
+Çok kelimeli Route'lar tire "-" ile ayrılacak. Örn. /hello-world/
 
 ### Controller
 
