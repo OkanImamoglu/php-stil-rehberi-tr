@@ -34,3 +34,14 @@ Controller isimleri Tekil olacak ve sonunda Controller yazacak. Örn. UserContro
 **Tablo Silme** delete_**{{ $tabloAdi }}**_table
 
 **Sütun Ekleme** add_**{{ $sutunAdi}}**_column_to_**{{ $tabloAdi }}**_table
+
+### Git
+
+Her commit sadece kendisi ile ilgili yapılan işlemleri açıklayacak. Bir özellik tamamlandığı zaman commit edilecek. Birden fazla özellikle birlikte commit edilmeyecek. Açıklamalar ne yapıldığını tam olarak açıklayacak fakat 50 karakterden uzun olmayacak. İlk hafler büyük olacak ve yapılan işlemi açıklayacak örn. Eklendi, Güncellendi, Silindi, Düzeltildi gibi.
+
+#### Örnekler
+**Initial Commit**
+**Added:** carousel.js for carousel feature on homepage
+**Updated:** carousel.js for fixing dancing bug
+**Deleted:** carousel.js beacuse it become unnecessary after adding bootstrap 
+
