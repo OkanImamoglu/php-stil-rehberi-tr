@@ -16,27 +16,41 @@ Herkese açık php stil rehberi
 
 ### Route
 
-Route'lar restful tasarlanacak.
+1. Route'lar restful tasarlanacak.
 
-Route'lar çoğul olacak. Örn. /users/
+2. Route'lar çoğul olacak. Örn. /users/
 
-Nested Route'lar ilişki tipine göre çoğul veya tekil isimlendirilecek. Örn. hasMany: users/1/customer**s** , hasOne: customers/2/user
+3. Nested Route'lar ilişki tipine göre çoğul veya tekil isimlendirilecek. Örn. hasMany: users/1/customer**s** , hasOne: customers/2/user
 
-Çok kelimeli Route'lar tire "-" ile ayrılacak. Örn. /hello-world/
+4. Çok kelimeli Route'lar tire "-" ile ayrılacak. Örn. /hello-world/
+
+#### Restful Servisler
+
+1. İlişkili tablolar _embed={tabloAdi} sorgusuyla çağırılacak. Örn. /customers/1?**_embed=user**
+2. 
+2. Birden fazla alan isteniyorsa virgül(,) ile ayrılacak. Örn. /customers/1?**_embed=user,detail**
+3. 
+3. Birebir eşlenik sorgular {alan}={deger} ile çağrılacak. Örn. /customers?**user_id=1**
+4. 
+4. Like sorguları {alan}=%{deger}% şeklinde çağırılacak. Örn. /customers?**name=%can%**
+5. 
+5. Sayfalama _page={sayfa} şeklinde çağrılacak. Örn. /customers?**_page=1**
+6. 
+6. Limit _limit={deger} şeklinde çağırılacak Örn. /customers?**_limit=25**
+7. 
+7. Fulltext arama sorgular _q={deger} şeklinde çağrılacak. Örn. /customers?**_q=can**
 
 ### Controller
 
 Controller isimleri Tekil olacak ve sonunda Controller yazacak. Örn. UserController
+
 ### Migration
 
-##### **Tablo Yaratma** 
-create_**{{ $tabloAdi }}**_table
+1. **Tablo Yaratma** create_**{{ $tabloAdi }}**_table
 
-##### **Tablo Silme** 
-delete_**{{ $tabloAdi }}**_table
+2. **Tablo Silme** delete_**{{ $tabloAdi }}**_table
 
-##### **Sütun Ekleme** 
-add_**{{ $sutunAdi}}**_column_to_**{{ $tabloAdi }}**_table
+3. **Sütun Ekleme** add_**{{ $sutunAdi}}**_column_to_**{{ $tabloAdi }}**_table
 
 ## Veritabanı
 ### Tablo İsimleri
