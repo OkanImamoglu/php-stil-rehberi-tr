@@ -31,13 +31,13 @@
 
 <ol>
 <li>Tab yerine 4 boşluk kullanılacak</li>
-<li>Shortag &lt;? yerine &lt;?php kullanılacak</li>
+<li>Shortag &lt;? <strong>kullanılmayacak</strong> onun yerine <strong>&lt;?php</strong> kullanılacak</li>
 <li>Php dosyası bitiminde ?&gt; ile tag <strong>kapatılmayacak</strong>
 </li>
 </ol>
 
 <h2>
-<a id="laravel" class="anchor" href="#laravel" aria-hidden="true"><span class="octicon octicon-link"></span></a> Laravel</h2>
+<a id="laravel" class="anchor" href="#laravel" aria-hidden="true"><span class="octicon octicon-link"></span></a>Laravel</h2>
 
 <h3>
 <a id="model" class="anchor" href="#model" aria-hidden="true"><span class="octicon octicon-link"></span></a>Model</h3>
@@ -54,7 +54,7 @@
 
 <p>Route'lar çoğul olacak. Örn. /users/</p>
 
-<p>Nested Route'lar ilişki tipine göre çoğul veya tekil isimlendirilecek. Örn. hasMany: users/1/customer<em>s</em> , hasOne: customers/2/user</p>
+<p>Nested Route'lar ilişki tipine göre çoğul veya tekil isimlendirilecek. Örn. hasMany: users/1/customer<strong>s</strong> , hasOne: customers/2/user</p>
 
 <p>Çok kelimeli Route'lar tire "-" ile ayrılacak. Örn. /hello-world/</p>
 
@@ -62,6 +62,58 @@
 <a id="controller" class="anchor" href="#controller" aria-hidden="true"><span class="octicon octicon-link"></span></a>Controller</h3>
 
 <p>Controller isimleri Tekil olacak ve sonunda Controller yazacak. Örn. UserController</p>
+
+<h3>
+<a id="migration" class="anchor" href="#migration" aria-hidden="true"><span class="octicon octicon-link"></span></a> Migration</h3>
+
+<h5>
+<a id="tablo-yaratma" class="anchor" href="#tablo-yaratma" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Tablo Yaratma</strong>
+</h5>
+
+<p>create_<strong>{{ $tabloAdi }}</strong>_table</p>
+
+<h5>
+<a id="tablo-silme" class="anchor" href="#tablo-silme" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Tablo Silme</strong>
+</h5>
+
+<p>delete_<strong>{{ $tabloAdi }}</strong>_table</p>
+
+<h5>
+<a id="sütun-ekleme" class="anchor" href="#s%C3%BCtun-ekleme" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Sütun Ekleme</strong>
+</h5>
+
+<p>add_<strong>{{ $sutunAdi}}</strong><em>column_to</em><strong>{{ $tabloAdi }}</strong>_table</p>
+
+<h2>
+<a id="veritabanı" class="anchor" href="#veritaban%C4%B1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Veritabanı</h2>
+
+<h3>
+<a id="tablo-İsimleri" class="anchor" href="#tablo-%C4%B0simleri" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tablo İsimleri</h3>
+
+<p>Tablo isimleri çoğul ve anlamlı olmalıdır (users, posts vs...)</p>
+
+<h3>
+<a id="İlişkili-tablolar" class="anchor" href="#%C4%B0li%C5%9Fkili-tablolar" aria-hidden="true"><span class="octicon octicon-link"></span></a>İlişkili Tablolar</h3>
+
+<p>Bir foreign key ilişkiyi tuttuğu tablonun tekil adından türetilmelidir.</p>
+
+<p>users, ve posts tablolarında foreign key posts tablosunda user_id şeklinde tutulmalıdır.</p>
+
+<h2>
+<a id="git" class="anchor" href="#git" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git</h2>
+
+<p>Her commit sadece kendisi ile ilgili yapılan işlemleri açıklayacak. Bir özellik tamamlandığı zaman commit edilecek. Birden fazla özellikle birlikte commit edilmeyecek. Açıklamalar ne yapıldığını tam olarak açıklayacak fakat 50 karakterden uzun olmayacak. İlk hafler büyük olacak ve yapılan işlemi açıklayacak örn. Eklendi, Güncellendi, Silindi, Düzeltildi gibi.</p>
+
+<h5>
+<a id="Örnekler" class="anchor" href="#%C3%96rnekler" aria-hidden="true"><span class="octicon octicon-link"></span></a>Örnekler</h5>
+
+<p><strong>Initial Commit</strong></p>
+
+<p><strong>Added:</strong> carousel.js for carousel feature on homepage</p>
+
+<p><strong>Updated:</strong> carousel.js for fixing dancing bug</p>
+
+<p><strong>Deleted:</strong> carousel.js beacuse it become unnecessary after adding bootstrap </p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/defli/php-stil-rehberi-tr">Türkçe PHP/Laravel Stil Rehberi</a> is maintained by <a href="https://github.com/defli">defli</a>.</span>
