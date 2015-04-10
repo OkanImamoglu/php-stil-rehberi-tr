@@ -30,4 +30,5 @@ Controller isimleri Tekil olacak ve sonunda Controller yazacak. Örn. UserContro
 ### Migration
 
 **Tablo Yaratma** create_**{{ $tabloAdi }}**_table
-** Sütun Ekleme** add_**{{ $sutunAdi}}**_column_to_**{{ $tabloAdi }}**_table
+
+**Sütun Ekleme** add_**{{ $sutunAdi}}**_column_to_**{{ $tabloAdi }}**_table
