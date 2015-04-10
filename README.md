@@ -60,4 +60,6 @@ Her commit sadece kendisi ile ilgili yapılan işlemleri açıklayacak. Bir öze
 
 **Deleted:** carousel.js beacuse it become unnecessary after adding bootstrap 
 
+Standart olarak git-flow takip edilecek.
 
+http://danielkummer.github.io/git-flow-cheatsheet/
