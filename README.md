@@ -27,17 +27,11 @@ Herkese açık php stil rehberi
 #### Restful Servisler
 
 1. İlişkili tablolar _embed={tabloAdi} sorgusuyla çağırılacak. Örn. /customers/1?**_embed=user**
-2. 
 2. Birden fazla alan isteniyorsa virgül(,) ile ayrılacak. Örn. /customers/1?**_embed=user,detail**
-3. 
 3. Birebir eşlenik sorgular {alan}={deger} ile çağrılacak. Örn. /customers?**user_id=1**
-4. 
 4. Like sorguları {alan}=%{deger}% şeklinde çağırılacak. Örn. /customers?**name=%can%**
-5. 
 5. Sayfalama _page={sayfa} şeklinde çağrılacak. Örn. /customers?**_page=1**
-6. 
 6. Limit _limit={deger} şeklinde çağırılacak Örn. /customers?**_limit=25**
-7. 
 7. Fulltext arama sorgular _q={deger} şeklinde çağrılacak. Örn. /customers?**_q=can**
 
 ### Controller
