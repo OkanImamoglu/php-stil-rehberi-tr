@@ -63,3 +63,4 @@ Her commit sadece kendisi ile ilgili yapılan işlemleri açıklayacak. Bir öze
 Standart olarak git-flow takip edilecek.
 
 http://danielkummer.github.io/git-flow-cheatsheet/
+TR: http://danielkummer.github.io/git-flow-cheatsheet/index.tr_TR.html
