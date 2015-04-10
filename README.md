@@ -29,4 +29,5 @@ Nested Route'lar ilişki tipine göre çoğul veya tekil isimlendirilecek. Örn.
 Controller isimleri Tekil olacak ve sonunda Controller yazacak. Örn. UserController
 ### Migration
 
-**Tablo Yaratma** create_**{{$tabloAdi}}**_table
+**Tablo Yaratma** create_**{{ $tabloAdi }}**_table
+** Sütun Ekleme** add_**{{ $sutunAdi}}**_column_to_**{{ $tabloAdi }}**_table
